@@ -1,12 +1,14 @@
 package c2g2.engine.graph;
 
+import org.joml.Matrix4f;
+import org.joml.Vector3f;
+import org.lwjgl.system.MemoryStack;
+
 import java.nio.FloatBuffer;
 import java.util.HashMap;
 import java.util.Map;
-import org.joml.Matrix4f;
-import org.joml.Vector3f;
+
 import static org.lwjgl.opengl.GL20.*;
-import org.lwjgl.system.MemoryStack;
 
 public class ShaderProgram {
 

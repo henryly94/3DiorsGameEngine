@@ -1,21 +1,19 @@
 package c2g2.engine.graph;
 
+import org.joml.Vector3f;
+import org.lwjgl.system.MemoryUtil;
+
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
+
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL13.GL_TEXTURE0;
 import static org.lwjgl.opengl.GL13.glActiveTexture;
 import static org.lwjgl.opengl.GL15.*;
 import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL30.*;
-
-import org.joml.AxisAngle4f;
-import org.joml.Quaternionf;
-import org.joml.Quaternionfc;
-import org.joml.Vector3f;
-import org.lwjgl.system.MemoryUtil;
 
 public class Mesh {
 
@@ -204,6 +202,9 @@ public class Mesh {
 
     public void cleanMesh(){
 
+        // This function is the same as cleanUp() only it leaves TextureBuffer undeleted.
+        // It is for efficiency
+
         glDisableVertexAttribArray(0);
 
         // Delete the VBOs
@@ -224,6 +225,7 @@ public class Mesh {
     	//Do not change textco, norms, inds
     	//student code 
     	for (int i = 0; i < pos.length/3; i++) {
+    	    // Simple Scaling
             pos[i*3] *= sx;
             pos[i*3 + 1] *= sy;
             pos[i*3 + 2] *= sz;
@@ -237,6 +239,7 @@ public class Mesh {
     	//Do not change textco, norms, inds
     	//student code
     	for(int i=0; i< pos.length/3; i++){
+    	    // Simple Translating
             pos[i*3] += trans.x;
             pos[i*3 + 1] += trans.y;
             pos[i*3 + 2] += trans.z;
@@ -253,8 +256,8 @@ public class Mesh {
         float cos = (float)Math.cos(angle);
         float sin = (float)Math.sin(angle);
         float tmp_x, tmp_y, tmp_z;
-//        AxisAngle4f angle4f = new AxisAngle4f(axis.x, axis.y, axis.z, angle);
-//        Quaternionf q = new Quaternionf(angle4f);
+
+        // Simple rotating
     	for(int i=0; i< pos.length/3; i++){
     		tmp_x = (cos + (1-cos) * axis.x * axis.x) * pos[i*3] +
                     ((1-cos) * axis.x * axis.y - sin * axis.z) * pos[i*3+1] +
@@ -277,6 +280,8 @@ public class Mesh {
     	//reset position of each point
     	//Do not change textco, norms, inds
     	//student code
+
+        // Simple reflecting
     	for(int i=0; i< pos.length/3; i++){
     	    Vector3f x = new Vector3f(pos[i*3]-p.x, pos[i*3+1]-p.y, pos[i*3+2]-p.z).reflect(n);
     	    pos[i*3] = x.x + p.x;

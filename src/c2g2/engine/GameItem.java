@@ -1,7 +1,7 @@
 package c2g2.engine;
 
-import org.joml.Vector3f;
 import c2g2.engine.graph.Mesh;
+import org.joml.Vector3f;
 
 public class GameItem {
 

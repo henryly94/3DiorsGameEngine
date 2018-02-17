@@ -2,10 +2,11 @@ package c2g2.engine;
 
 import org.joml.Vector2d;
 import org.joml.Vector2f;
-import static org.lwjgl.glfw.GLFW.*;
-import org.lwjgl.glfw.GLFWCursorPosCallback;
 import org.lwjgl.glfw.GLFWCursorEnterCallback;
+import org.lwjgl.glfw.GLFWCursorPosCallback;
 import org.lwjgl.glfw.GLFWMouseButtonCallback;
+
+import static org.lwjgl.glfw.GLFW.*;
 
 public class MouseInput {
 

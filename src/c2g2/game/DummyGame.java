@@ -1,21 +1,14 @@
 package c2g2.game;
 
-import org.joml.Vector2f;
-import org.joml.Vector3f;
-
-
-import static org.lwjgl.glfw.GLFW.*;
-
 import c2g2.engine.GameItem;
 import c2g2.engine.IGameLogic;
 import c2g2.engine.MouseInput;
 import c2g2.engine.Window;
-import c2g2.engine.graph.Camera;
-import c2g2.engine.graph.DirectionalLight;
-import c2g2.engine.graph.Material;
-import c2g2.engine.graph.Mesh;
-import c2g2.engine.graph.OBJLoader;
-import c2g2.engine.graph.PointLight;
+import c2g2.engine.graph.*;
+import org.joml.Vector2f;
+import org.joml.Vector3f;
+
+import static org.lwjgl.glfw.GLFW.*;
 
 public class DummyGame implements IGameLogic {
 
@@ -50,6 +43,7 @@ public class DummyGame implements IGameLogic {
     public DummyGame() {
         renderer = new Renderer();
         camera = new Camera();
+        camera.setPosition(0f, 1f, 5f);
         cameraInc = new Vector3f(0.0f, 0.0f, 0.0f);
         lightAngle = -90;
         currentObj=0;
@@ -59,19 +53,30 @@ public class DummyGame implements IGameLogic {
     public void init(Window window) throws Exception {
         renderer.init(window);
         float reflectance = 1f;
-        // NOTE: 
-        //  please uncomment following lines to test your OBJ Loader.
-//        Mesh mesh = new Mesh();
-//        Mesh mesh = OBJLoader.loadMesh("src/resources/models/bunny.obj", null);
-        Mesh mesh = OBJLoader.loadMesh("../model/horse.obj", "../model/horse_tex.png", true);//new Mesh();  // comment this line when you enable OBJLoader
-//       Mesh mesh = OBJLoader.loadMesh("../model/camel.obj", null);//"../model/camel.png");
+
+        // Different Usage Here
+        // Mesh mesh = new Mesh();
+         Mesh mesh = OBJLoader.loadMesh("src/resources/models/bunny.obj", "src/resources/textures/horse.png", false);
+//        Mesh mesh = OBJLoader.loadMesh("src/resources/models/horse.obj", "src/resources/textures/horse.png", true);//new Mesh();  // comment this line when you enable OBJLoader
+        Mesh mesh2 = OBJLoader.loadMesh("src/resources/models/bullet.obj","src/resources/textures/bullet.png", true);
         Material material = new Material(new Vector3f(1f, 1f, 1f), reflectance);
         
 
         mesh.setMaterial(material);
         GameItem gameItem = new GameItem(mesh);
 
-        gameItems = new GameItem[]{gameItem};
+        // ======================= ======================= ======================= =======================
+        // Only for bullet-horse demonstration
+        mesh2.setMaterial(material);
+        mesh2.scaleMesh(0.001f, 0.001f, 0.001f);
+        GameItem gameItem2 = new GameItem(mesh2);
+        gameItem2.setPosition(4 * (float)Math.tan(Math.toRadians(30)), 2f, 4f + 1f);
+        gameItem2.setRotation(0f, 120f, 0f);
+        gameItems = new GameItem[]{gameItem, gameItem2};
+        // ======================= ======================= ======================= =======================
+
+        // Uncomment this line when you want to see other models.
+        //gameItems = new GameItem[]{gameItem};
 
         ambientLight = new Vector3f(0.3f, 0.3f, 0.3f);
         Vector3f lightColour = new Vector3f(1, 1, 1);
@@ -84,6 +89,7 @@ public class DummyGame implements IGameLogic {
         lightPosition = new Vector3f(-1, 0, 0);
         lightColour = new Vector3f(1, 1, 1);
         directionalLight = new DirectionalLight(lightColour, lightPosition, lightIntensity);
+
     }
 
     @Override
@@ -202,9 +208,15 @@ public class DummyGame implements IGameLogic {
         if (mouseInput.isLeftButtonPressed()) {
             Vector2f rotVec = mouseInput.getDisplVec();
             System.out.println(rotVec);
-            Vector3f curr = gameItems[0].getRotation();
-            gameItems[0].setRotation(curr.x+ rotVec.x * MOUSE_SENSITIVITY, curr.y+rotVec.y * MOUSE_SENSITIVITY, 0);
+            Vector3f curr = gameItems[currentObj].getRotation();
+            gameItems[currentObj].setRotation(curr.x+ rotVec.x * MOUSE_SENSITIVITY, curr.y+rotVec.y * MOUSE_SENSITIVITY, 0);
         }
+
+        // ====================== ====================== ====================== ====================== ====================== ======================
+        // Only for bullet-horse demonstration, delete when you want to see other model.
+        Vector3f curr_pos = gameItems[1].getPosition();
+        gameItems[1].setPosition(curr_pos.x - 0.02f * (float)Math.tan(Math.toRadians(30)), curr_pos.y,  curr_pos.z-0.02f);
+        // ====================== ====================== ====================== ====================== ====================== ======================
 
         // Update directional light direction, intensity and color
         lightAngle += 1.1f;
@@ -215,7 +227,7 @@ public class DummyGame implements IGameLogic {
                 lightAngle = -90;
             }
         } else if (lightAngle <= -80 || lightAngle >= 80) {
-            float factor = 1 - (float) (Math.abs(lightAngle) - 80) / 10.0f;
+            float factor = 1 -  (Math.abs(lightAngle) - 80) / 10.0f;
             directionalLight.setIntensity(factor);
             directionalLight.getColor().y = Math.max(factor, 0.9f);
             directionalLight.getColor().z = Math.max(factor, 0.5f);

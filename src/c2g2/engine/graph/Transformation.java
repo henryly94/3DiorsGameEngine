@@ -1,10 +1,9 @@
 package c2g2.engine.graph;
 
+import c2g2.engine.GameItem;
 import org.joml.Matrix3f;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
-import c2g2.engine.GameItem;
-import org.joml.Vector4f;
 
 public class Transformation {
 
@@ -23,7 +22,7 @@ public class Transformation {
     public final Matrix4f getProjectionMatrix(float fov, float width, float height, float zNear, float zFar) {
         projectionMatrix.identity();
         //// --- student code ---
-        // r+l = t+b = 0
+        // Since r+l = t+b = 0, There's only 5 entries need to be changed
         float tan = (float)Math.tan((double)fov * 0.5f);
         projectionMatrix.m00(height / (tan * width));
         projectionMatrix.m11(1/tan);
@@ -40,6 +39,7 @@ public class Transformation {
         viewMatrix.identity();
         //// --- student code ---
 
+        // This part all comes from book 7.1.3
         Vector3f rotation = camera.getRotation();
 
         Matrix4f rotMatrix=new Matrix4f();

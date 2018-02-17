@@ -1,28 +1,24 @@
 package c2g2.game;
 
+import ar.com.hjg.pngj.ImageInfo;
+import ar.com.hjg.pngj.ImageLineHelper;
+import ar.com.hjg.pngj.ImageLineInt;
+import ar.com.hjg.pngj.PngWriter;
+import c2g2.engine.GameItem;
+import c2g2.engine.Window;
+import c2g2.engine.graph.*;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 import org.lwjgl.BufferUtils;
 
-import static org.lwjgl.opengl.GL11.*;
-
-import java.awt.HeadlessException;
-
+import java.awt.*;
 import java.io.File;
 import java.nio.ByteBuffer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import ar.com.hjg.pngj.*;
 
-import c2g2.engine.GameItem;
-import c2g2.engine.Window;
-import c2g2.engine.graph.Camera;
-import c2g2.engine.graph.DirectionalLight;
-import c2g2.engine.graph.Mesh;
-import c2g2.engine.graph.PointLight;
-import c2g2.engine.graph.ShaderProgram;
-import c2g2.engine.graph.Transformation;
+import static org.lwjgl.opengl.GL11.*;
 
 public class Renderer {
 

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ca570d7-5f6d-40c4-a160-9ef6a2616f44" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/c2g2/engine/SceneManager.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" afterPath="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" />
-      <change beforePath="$PROJECT_DIR$/src/c2g2/game/Main.java" afterPath="$PROJECT_DIR$/src/c2g2/game/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -438,12 +434,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518294122378</updated>
-      <workItem from="1518294123815" duration="84756000" />
+      <workItem from="1518294123815" duration="84824000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84756000" />
+    <option name="totallyTimeSpent" value="84824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

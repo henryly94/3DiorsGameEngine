@@ -12,6 +12,8 @@ public class Timer {
         return System.nanoTime() / 1000_000_000.0;
     }
 
+    public static double getMiliTime(){return System.nanoTime() / 1_000_000.0;}
+
     public float getElapsedTime() {
         double time = getTime();
         float elapsedTime = (float) (time - lastLoopTime);

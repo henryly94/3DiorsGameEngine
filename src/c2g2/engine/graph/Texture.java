@@ -38,6 +38,7 @@ public class Texture {
         pngDecoder.decode(textBuffer, width * 4, PNGDecoder.Format.RGBA);
         textBuffer.flip();
 
+
         id = glGenTextures();
         glBindTexture(GL_TEXTURE_2D, id);
 

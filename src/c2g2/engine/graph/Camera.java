@@ -1,14 +1,17 @@
 package c2g2.engine.graph;
 
+import org.joml.Matrix4f;
 import org.joml.Vector3f;
 
 public class Camera {
 
-    private Vector3f position;
-    private Vector3f target;
-    private Vector3f up;
+    public Vector3f position;
+    public Vector3f target;
+    public Vector3f up;
+
     
     private final Vector3f rotation;
+
     
     public Camera() {
         position = new Vector3f(0, 0, 0);
@@ -35,10 +38,12 @@ public class Camera {
     public Vector3f getTarget(){
     	return target;
     }
-    
-    public void setTarget(Vector3f target){
-    	this.target = target;
+
+    public void setTarget(Vector3f t){
+        target = t;
     }
+
+
     
     public Vector3f getUp(){
     	return up;
@@ -59,6 +64,8 @@ public class Camera {
         }
         position.y += offsetY;
     }
+
+
 
     public Vector3f getRotation() {
         return rotation;

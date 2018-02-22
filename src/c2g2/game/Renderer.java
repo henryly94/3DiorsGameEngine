@@ -4,6 +4,7 @@ import ar.com.hjg.pngj.ImageInfo;
 import ar.com.hjg.pngj.ImageLineHelper;
 import ar.com.hjg.pngj.ImageLineInt;
 import ar.com.hjg.pngj.PngWriter;
+import c2g2.engine.FrontItem;
 import c2g2.engine.GameItem;
 import c2g2.engine.Window;
 import c2g2.engine.graph.*;
@@ -35,7 +36,13 @@ public class Renderer {
 
     private ShaderProgram shaderProgram;
 
+    private ShaderProgram hudShaderProgram;
+
     private final float specularPower;
+
+    private boolean hasHud;
+
+    private FrontItem[] HudItems;
 
     public Renderer() {
         transformation = new Transformation();
@@ -44,6 +51,7 @@ public class Renderer {
 
     public void init(Window window) throws Exception {
         // Create shader
+        hasHud = false;
         shaderProgram = new ShaderProgram();
         // shaderProgram.createVertexShader(Utils.loadResource("/shaders/vertex.vs"));
         shaderProgram.createVertexShader(new String(Files.readAllBytes(Paths.get("src/resources/shaders/vertex.vs"))));
@@ -85,10 +93,13 @@ public class Renderer {
         glViewport(0, 0, window.getWidth(), window.getHeight());
         // if your display *is* retina, then uncomment the following line 
         glViewport(0, 0, window.getWidth()*2, window.getHeight()*2);
-        shaderProgram.bind();
-        
-        // Update projection Matrix
+
         Matrix4f projectionMatrix = transformation.getProjectionMatrix(FOV, window.getWidth(), window.getHeight(), Z_NEAR, Z_FAR);
+
+
+        shaderProgram.bind();
+
+        // Update projection Matrix
         shaderProgram.setUniform("projectionMatrix", projectionMatrix);
 
         // Update view Matrix
@@ -127,6 +138,25 @@ public class Renderer {
         }
 
         shaderProgram.unbind();
+
+
+        if (hasHud) {
+            hudShaderProgram.bind();
+            hudShaderProgram.setUniform("projModelMatrix", projectionMatrix);
+            hudShaderProgram.setUniform("colour", new Vector4f(0.6f, 0.6f, 0.6f, 1));
+            for (FrontItem hudItem : HudItems){
+                hudItem.render();
+            }
+            hudShaderProgram.unbind();
+        }
+
+
+    }
+
+    public void setHud(FrontItem[] hudItems) throws Exception{
+        this.HudItems = hudItems;
+        setupHudShader();
+        hasHud = true;
     }
 
     public void cleanup() {
@@ -136,6 +166,18 @@ public class Renderer {
     }
     
     private static int imgcount=0;
+
+    private void setupHudShader() throws Exception {
+        hudShaderProgram = new ShaderProgram();
+        hudShaderProgram.createVertexShader(new String(Files.readAllBytes(Paths.get("src/resources/shaders/hud_vertex.vs"))));
+        hudShaderProgram.createFragmentShader(new String(Files.readAllBytes(Paths.get("src/resources/shaders/hud_fragment.fs"))));
+        hudShaderProgram.link();
+
+
+        // Create uniforms for Ortographic-model projection matrix and base colour
+        hudShaderProgram.createUniform("projModelMatrix");
+        hudShaderProgram.createUniform("colour");
+    }
     
 
     public void writePNG(Window window) throws HeadlessException{

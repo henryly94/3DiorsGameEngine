@@ -1,11 +1,12 @@
 package c2g2.engine;
 
 import c2g2.engine.graph.Mesh;
+import c2g2.engine.graph.Texture;
 import org.joml.Vector3f;
 
 public class GameItem {
 
-    private final Mesh mesh;
+    private Mesh mesh;
     
     private final Vector3f position;
     
@@ -50,5 +51,9 @@ public class GameItem {
     
     public Mesh getMesh() {
         return mesh;
+    }
+
+    public void setMesh(Mesh mesh){
+        this.mesh = mesh;
     }
 }

@@ -40,6 +40,7 @@ public class MouseInput {
             @Override
             public void invoke(long window, boolean entered) {
                 inWindow = entered;
+                glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
             }
         });
         glfwSetMouseButtonCallback(window.getWindowHandle(), new GLFWMouseButtonCallback() {
@@ -49,6 +50,8 @@ public class MouseInput {
                 rightButtonPressed = button == GLFW_MOUSE_BUTTON_2 && action == GLFW_PRESS;
             }
         });
+
+
     }
 
     public Vector2f getDisplVec() {
@@ -63,15 +66,21 @@ public class MouseInput {
             double deltay = currentPos.y - previousPos.y;
             boolean rotateX = deltax != 0;
             boolean rotateY = deltay != 0;
+
             if (rotateX) {
                 displVec.y = (float) deltax;
             }
             if (rotateY) {
                 displVec.x = (float) deltay;
             }
+            previousPos.x = window.getWidth() / 2;
+            previousPos.y = window.getHeight() / 2;
+            glfwSetCursorPos(window.getWindowHandle(), previousPos.x, previousPos.y);
+        } else if (inWindow) {
+            previousPos.x = window.getWidth() / 2;
+            previousPos.y = window.getHeight() / 2;
+            glfwSetCursorPos(window.getWindowHandle(), previousPos.x, previousPos.y);
         }
-        previousPos.x = currentPos.x;
-        previousPos.y = currentPos.y;
     }
 
     public boolean isLeftButtonPressed() {

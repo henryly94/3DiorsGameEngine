@@ -3,121 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="0ca570d7-5f6d-40c4-a160-9ef6a2616f44" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-assimp-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-assimp-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-assimp-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-assimp.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-bgfx-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-bgfx-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-bgfx-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-bgfx.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-egl-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-egl-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-egl.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-glfw-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-glfw-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-glfw-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jawt-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jawt-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jawt.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jemalloc-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jemalloc-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jemalloc-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-jemalloc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lmdb-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lmdb-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lmdb-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lmdb.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lz4-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lz4-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lz4-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-lz4.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nanovg-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nanovg-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nanovg-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nanovg.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nfd-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nfd-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nfd-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nfd.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nuklear-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nuklear-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nuklear-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-nuklear.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-odbc-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-odbc-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openal-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openal-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openal-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openal.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opencl-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opencl-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengl-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengl-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengles-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengles-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengles-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openvr-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openvr-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openvr-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-openvr.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-par-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-par-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-par-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-remotery-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-remotery-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-remotery-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-remotery.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-rpmalloc-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-rpmalloc-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-rpmalloc-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-rpmalloc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-sse-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-sse-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-sse-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-stb-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-stb-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-stb-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyexr-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyexr-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyexr-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyexr.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyfd-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyfd-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyfd-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tinyfd.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tootle-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tootle-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tootle-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-tootle.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-vulkan-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-vulkan-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-vulkan.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-xxhash-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-xxhash-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-xxhash-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-xxhash.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-yoga-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-yoga-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-yoga-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-yoga.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-zstd-javadoc.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-zstd-natives-macos.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/lwjgl-zstd-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/pngj-2.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/FrontItem.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/FrontItem.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/GameItem.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/GameItem.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/MouseInput.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/MouseInput.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/SceneManager.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/SceneManager.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/Timer.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/Timer.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/Window.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/Window.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java" />
-      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java" />
-      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/game/DummyGame.java" afterPath="$PROJECT_DIR$/src/c2g2/game/DummyGame.java" />
+      <change beforePath="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" afterPath="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/game/Main.java" afterPath="$PROJECT_DIR$/src/c2g2/game/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/c2g2/game/Renderer.java" afterPath="$PROJECT_DIR$/src/c2g2/game/Renderer.java" />
     </list>
@@ -130,47 +30,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DummyGame.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DummyGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="197" lean-forward="false" selection-start-line="21" selection-start-column="197" selection-end-line="21" selection-end-column="197" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="79" column="31" lean-forward="false" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+            <state relative-caret-position="226">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,8 +44,22 @@
       <file leaf-file-name="FPSGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/game/FPSGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="174">
+              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1374#3342#0" expanded="true" />
+                <element signature="e#3341#3342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FPSCamera.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="98" column="81" lean-forward="false" selection-start-line="98" selection-start-column="81" selection-end-line="98" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,24 +67,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SceneManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
+      <file leaf-file-name="FPSGameItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="165">
+              <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#2024#2025#0" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#3486#3487#0" expanded="true" />
+                <element signature="e#3513#3514#0" expanded="true" />
+                <element signature="e#4780#4781#0" expanded="true" />
+                <element signature="e#4805#4806#0" expanded="true" />
+                <element signature="e#4835#4836#0" expanded="true" />
+                <element signature="e#4862#4863#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OBJLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -213,42 +94,70 @@
       <file leaf-file-name="Mesh.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1934">
-              <caret line="141" column="24" lean-forward="false" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+            <state relative-caret-position="70">
+              <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Texture.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+              <folding>
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FrontItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4548#4549#0" expanded="true" />
-                <element signature="e#4579#4580#0" expanded="true" />
-                <element signature="e#4778#4779#0" expanded="true" />
-                <element signature="e#4806#4807#0" expanded="true" />
-                <element signature="e#4841#4842#0" expanded="true" />
-                <element signature="e#4875#4876#0" expanded="true" />
-                <element signature="e#9021#9022#0" expanded="true" />
-                <element signature="e#9051#9052#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#4041#4042#0" expanded="true" />
+                <element signature="e#4075#4076#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Material.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Material.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-              <folding>
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShaderProgram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -286,6 +195,8 @@
       <find>material</find>
       <find>programId</find>
       <find>renderer</find>
+      <find>createVertexShader</find>
+      <find>random</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -308,21 +219,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/Window.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java" />
         <option value="$PROJECT_DIR$/src/c2g2/engine/GameEngine.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/game/Renderer.java" />
         <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Material.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/SceneManager.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/game/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java" />
         <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java" />
         <option value="$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java" />
-        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/Timer.java" />
         <option value="$PROJECT_DIR$/src/c2g2/game/DummyGame.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/MouseInput.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/GameItem.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/Window.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/FrontItem.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/game/Renderer.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/game/Main.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/SceneManager.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/game/FPSGame.java" />
+        <option value="$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java" />
       </list>
     </option>
   </component>
@@ -333,7 +251,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="718" />
+    <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -354,9 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -373,26 +289,65 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="pa1_release" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pa1_release" type="462c0819:PsiDirectoryNode" />
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pa1_release" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pa1_release" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pa1_release" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="c2g2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="c2g2" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="c2g2" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="c2g2" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,6 +358,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -536,43 +492,45 @@
       <option name="presentableId" value="Default" />
       <updated>1518294122378</updated>
       <workItem from="1518294123815" duration="90575000" />
+      <workItem from="1518906100748" duration="751000" />
+      <workItem from="1519067277915" duration="38158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90575000" />
+    <option name="totallyTimeSpent" value="129484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29058823" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29058823" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,85 +540,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/screenshot5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector4fc.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector4i.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="380" column="14" lean-forward="false" selection-start-line="380" selection-start-column="14" selection-end-line="380" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector4d.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="448" column="19" lean-forward="false" selection-start-line="448" selection-start-column="13" selection-end-line="448" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Matrix4fc.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="204" column="13" lean-forward="false" selection-start-line="204" selection-start-column="13" selection-end-line="204" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/MemUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="314" column="25" lean-forward="false" selection-start-line="314" selection-start-column="25" selection-end-line="314" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenshot12.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot0.png" />
+    <entry file="file://$PROJECT_DIR$/screenshot12.png" />
     <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Matrix3f.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-248">
           <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,296 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Matrix4f.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="651" column="20" lean-forward="false" selection-start-line="651" selection-start-column="20" selection-end-line="651" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector3f.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
-          <folding>
-            <marker date="1488215588000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1488215588000" expanded="false" signature="132:360" ph="..." />
-            <marker date="1488215588000" expanded="true" signature="559:566" ph="{}" />
-            <marker date="1488215588000" expanded="false" signature="596:607" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="621:627" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="676:743" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="778:857" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="901:976" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="1016:1027" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1059:1065" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1116:1127" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1169:1175" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1216:1227" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1259:1265" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1317:1328" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1370:1376" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1398:1409" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1423:1429" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1451:1462" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1476:1482" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="1504:1515" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="1529:1535" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="1574:1674" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="1713:1834" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="1882:1978" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="2012:2023" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="2048:2054" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="2107:2195" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="2239:2250" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="2293:2299" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="2355:2434" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="2479:2490" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="2533:2539" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="2596:2675" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="2770:3093" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="3141:3152" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="3195:3201" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="3261:3342" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="3388:3399" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="3442:3448" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="3506:3587" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="3626:3729" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="3783:3910" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="3963:4054" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4122:4237" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4276:4379" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4433:4560" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4613:4704" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4772:4887" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="4939:5066" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="5114:5229" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="5296:5447" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="5510:5649" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="5688:5791" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="5845:5972" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="6011:6114" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="6168:6295" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="6358:6757" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="6804:6815" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="6849:6855" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="6895:6906" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="6933:6939" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="6995:7227" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="7269:7280" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="7307:7313" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="7371:7549" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="7598:7609" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="7636:7642" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="7707:7939" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="7987:7998" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="8033:8039" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="8089:8100" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="8135:8141" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="8205:8473" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="8539:8807" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="8864:8875" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="8919:8925" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="8998:9266" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="9312:9323" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="9359:9365" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="9427:9784" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="9833:9844" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="9880:9886" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="9937:9948" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="9984:9990" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="10055:10287" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="10354:10586" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="10644:10655" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="10700:10706" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="10780:11012" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11052:11158" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11213:11343" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11396:11487" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11555:11670" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11710:11816" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="11871:12001" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="12054:12145" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="12213:12328" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="12376:12440" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="12503:12567" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="12637:12648" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="12684:12690" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="12786:12873" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="12907:12918" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="12977:12983" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="13010:13021" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="13075:13081" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="13115:13278" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="13325:13512" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="13553:13684" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="13739:13846" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="13902:14033" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="14103:14210" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="14251:14435" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="14490:14662" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="14710:14866" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="14928:15072" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="15107:15118" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="15174:15180" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="15229:15240" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="15284:15290" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="15331:15673" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="15711:15882" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="15921:16099" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="16138:16316" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="16345:16442" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="16473:17176" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="17229:17379" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="17448:17551" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="17641:17747" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="17778:17884" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="17928:18034" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="18062:18329" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="18369:18991" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="19039:19237" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="19294:19466" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="19529:19751" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="19823:20019" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="20062:20073" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="20108:20114" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="20167:20178" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="20215:20221" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="20279:20290" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="20346:20352" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="20421:20495" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="20565:20997" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="21093:21669" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="21721:21732" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="21765:21771" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="21839:22023" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="22093:22334" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="22366:22624" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="22656:22911" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="22975:23569" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="23617:23628" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="23663:23669" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="23737:24195" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="24247:24258" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24297:24303" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="24339:24350" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24419:24425" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="24478:31818" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="24556:24571" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24596:24606" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="24632:24647" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24672:24682" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="24708:24723" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24748:24758" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="24784:24799" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24824:24834" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="24886:24901" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="24934:24944" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25007:25022" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25062:25072" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25122:25137" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25170:25180" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25241:25256" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25296:25306" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25363:25378" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25412:25422" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25493:25508" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25548:25558" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25615:25630" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25664:25674" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25745:25760" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25800:25810" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="25880:25895" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="25932:25942" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26008:26023" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26060:26070" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26127:26142" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26176:26186" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26243:26258" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26292:26302" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26368:26383" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26426:26436" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26495:26510" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26546:26556" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26624:26639" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26684:26694" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26761:26776" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26820:26830" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="26899:26914" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="26958:26968" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="27045:27122" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="27187:27202" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="27247:27257" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="27325:27340" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="27385:27395" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="27465:27480" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="27525:27535" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="27613:27691" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="27749:27764" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="27803:27813" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="27884:27899" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="27939:27949" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="28007:28022" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28061:28071" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="28142:28157" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28197:28207" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="28273:28288" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28328:28338" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="28413:28482" ph="{...}" />
-            <marker date="1488215588000" expanded="true" signature="28582:28668" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="28706:28721" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28758:28768" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="28799:28814" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28844:28854" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="28904:28919" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="28956:28966" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29025:29040" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29076:29086" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29159:29174" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29216:29226" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29270:29285" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29318:29328" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29386:29401" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29440:29450" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29501:29516" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29556:29566" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29631:29646" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29692:29702" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29741:29756" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29784:29794" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29847:29862" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29896:29906" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="29950:29965" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="29998:30008" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="30049:30064" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30094:30104" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="30151:30166" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30200:30210" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="30276:30291" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30334:30344" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="30420:30488" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="30550:30565" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30604:30614" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="30686:30701" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30742:30752" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="30825:30840" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="30884:30894" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="30994:31068" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="31139:31154" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="31196:31206" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="31280:31340" ph="{...}" />
-            <marker date="1488215588000" expanded="false" signature="31375:31390" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="31426:31436" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="31471:31486" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="31522:31532" ph=" }" />
-            <marker date="1488215588000" expanded="false" signature="31599:31614" ph=" { " />
-            <marker date="1488215588000" expanded="false" signature="31658:31668" ph=" }" />
-            <marker date="1488215588000" expanded="true" signature="31740:31812" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="769" column="0" lean-forward="false" selection-start-line="769" selection-start-column="0" selection-end-line="769" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,9 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-          <folding>
-            <element signature="e#13945#13946#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="1142" column="16" lean-forward="false" selection-start-line="1142" selection-start-column="16" selection-end-line="1142" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="1990" column="30" lean-forward="false" selection-start-line="1990" selection-start-column="30" selection-end-line="1990" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,19 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="841" column="16" lean-forward="false" selection-start-line="841" selection-start-column="16" selection-end-line="841" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="899" column="30" lean-forward="false" selection-start-line="899" selection-start-column="30" selection-end-line="899" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1558">
           <caret line="202" column="27" lean-forward="false" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="453" column="24" lean-forward="false" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,15 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="1845" column="18" lean-forward="false" selection-start-line="1845" selection-start-column="18" selection-end-line="1845" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,70 +648,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/PNGDecoder.jar!/de/matthiasmann/twl/utils/PNGDecoder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5666">
           <caret line="904" column="8" lean-forward="false" selection-start-line="904" selection-start-column="8" selection-end-line="904" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/pa1_release/resources/shaders/vertex.vs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/pa1_release/resources/shaders/fragment.fs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/pa1_release/resources/shaders/vertex.vs" />
+    <entry file="file://$PROJECT_DIR$/out/production/pa1_release/resources/shaders/fragment.fs" />
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IGameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/MouseInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="e#2570#2571#0" expanded="false" />
-            <element signature="e#2624#2625#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="69" column="24" lean-forward="false" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,136 +675,295 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1371">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#1592#1593#0" expanded="false" />
-            <element signature="e#1620#1621#0" expanded="false" />
-            <element signature="e#1650#1651#0" expanded="false" />
-            <element signature="e#1679#1680#0" expanded="false" />
-            <element signature="e#1706#1707#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1760#1761#0" expanded="false" />
-            <element signature="e#1796#1797#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="197" lean-forward="false" selection-start-line="21" selection-start-column="197" selection-end-line="21" selection-end-column="197" />
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1934">
-          <caret line="141" column="24" lean-forward="false" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4548#4549#0" expanded="true" />
-            <element signature="e#4579#4580#0" expanded="true" />
-            <element signature="e#4778#4779#0" expanded="true" />
-            <element signature="e#4806#4807#0" expanded="true" />
-            <element signature="e#4841#4842#0" expanded="true" />
-            <element signature="e#4875#4876#0" expanded="true" />
-            <element signature="e#9021#9022#0" expanded="true" />
-            <element signature="e#9051#9052#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#801#802#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#867#868#0" expanded="false" />
+            <element signature="e#893#894#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1645#1646#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Material.java">
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/MouseInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="44" column="24" lean-forward="false" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        <state relative-caret-position="327">
+          <caret line="81" column="39" lean-forward="true" selection-start-line="79" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
           <folding>
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#784#1005#0" expanded="false" />
+            <element signature="e#1004#1005#0" expanded="false" />
+            <element signature="e#1069#1322#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1386#1726#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1772#1773#0" expanded="false" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#2801#2802#0" expanded="false" />
+            <element signature="e#2841#2842#0" expanded="false" />
+            <element signature="e#2886#2887#0" expanded="false" />
+            <element signature="e#2927#2928#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="79" column="31" lean-forward="false" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+        <state relative-caret-position="388">
+          <caret line="106" column="28" lean-forward="false" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector3f.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="448" column="17" lean-forward="false" selection-start-line="448" selection-start-column="17" selection-end-line="448" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="536" column="26" lean-forward="false" selection-start-line="536" selection-start-column="26" selection-end-line="536" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="241" column="6" lean-forward="false" selection-start-line="241" selection-start-column="6" selection-end-line="241" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="111" column="58" lean-forward="false" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="145" column="79" lean-forward="false" selection-start-line="145" selection-start-column="79" selection-end-line="145" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="152" column="25" lean-forward="false" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
+          <folding>
+            <element signature="e#5907#5908#0" expanded="true" />
+            <element signature="e#5988#5989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Math.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Matrix4f.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="2636" column="35" lean-forward="false" selection-start-line="2636" selection-start-column="35" selection-end-line="2636" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+          <folding>
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FrontItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#4041#4042#0" expanded="true" />
+            <element signature="e#4075#4076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/game/FPSGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="174">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1374#3342#0" expanded="true" />
+            <element signature="e#3341#3342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#2024#2025#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#3486#3487#0" expanded="true" />
+            <element signature="e#3513#3514#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="98" column="81" lean-forward="false" selection-start-line="98" selection-start-column="81" selection-end-line="98" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

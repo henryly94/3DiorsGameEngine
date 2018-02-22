@@ -158,6 +158,9 @@ public class Mesh {
         // Bind Texture
         if (texture != null) {
             // Activate firs texture bank
+
+            glEnable(GL_BLEND);
+            glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             glActiveTexture(GL_TEXTURE0);
 
             // Bind the texture
@@ -171,7 +174,6 @@ public class Mesh {
         glEnableVertexAttribArray(1);
         glEnableVertexAttribArray(2);
         glDrawElements(GL_TRIANGLES, getVertexCount(), GL_UNSIGNED_INT, 0);
-
 
         // Restore state
         glDisableVertexAttribArray(0);
@@ -290,6 +292,8 @@ public class Mesh {
     	}
     	setMesh(pos, textco, norms, inds, texture);
     }
+
+    public float[] getPos(){return pos;}
 
     public Texture getTexture() {
         return texture;

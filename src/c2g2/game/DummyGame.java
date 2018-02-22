@@ -56,8 +56,8 @@ public class DummyGame implements IGameLogic {
 
         // Different Usage Here
         // Mesh mesh = new Mesh();
-         Mesh mesh = OBJLoader.loadMesh("src/resources/models/bunny.obj", "src/resources/textures/horse.png", false);
-//        Mesh mesh = OBJLoader.loadMesh("src/resources/models/horse.obj", "src/resources/textures/horse.png", true);//new Mesh();  // comment this line when you enable OBJLoader
+//         Mesh mesh = OBJLoader.loadMesh("src/resources/models/bunny.obj", "src/resources/textures/horse.png", false);
+        Mesh mesh = OBJLoader.loadMesh("src/resources/models/horse.obj", "src/resources/textures/horse.png", true);//new Mesh();  // comment this line when you enable OBJLoader
         Mesh mesh2 = OBJLoader.loadMesh("src/resources/models/bullet.obj","src/resources/textures/bullet.png", true);
         Material material = new Material(new Vector3f(1f, 1f, 1f), reflectance);
         
@@ -78,10 +78,10 @@ public class DummyGame implements IGameLogic {
         // Uncomment this line when you want to see other models.
         //gameItems = new GameItem[]{gameItem};
 
-        ambientLight = new Vector3f(0.3f, 0.3f, 0.3f);
+        ambientLight = new Vector3f(1f, 1f, 1f);
         Vector3f lightColour = new Vector3f(1, 1, 1);
         Vector3f lightPosition = new Vector3f(0, 0, -1);
-        float lightIntensity = 1.0f;
+        float lightIntensity = 0.0f;
         pointLight = new PointLight(lightColour, lightPosition, lightIntensity);
         PointLight.Attenuation att = new PointLight.Attenuation(0.0f, 0.0f, 1.0f);
         pointLight.setAttenuation(att);
@@ -209,7 +209,11 @@ public class DummyGame implements IGameLogic {
             Vector2f rotVec = mouseInput.getDisplVec();
             System.out.println(rotVec);
             Vector3f curr = gameItems[currentObj].getRotation();
-            gameItems[currentObj].setRotation(curr.x+ rotVec.x * MOUSE_SENSITIVITY, curr.y+rotVec.y * MOUSE_SENSITIVITY, 0);
+            curr = camera.getRotation();
+//            gameItems[currentObj].setRotation(curr.x+ rotVec.x * MOUSE_SENSITIVITY, curr.y+rotVec.y * MOUSE_SENSITIVITY, 0);
+            camera.setRotation(curr.x - (float)Math.toRadians(rotVec.x * MOUSE_SENSITIVITY),
+                    curr.y - (float)Math.toRadians(rotVec.y * MOUSE_SENSITIVITY),
+                    0);
         }
 
         // ====================== ====================== ====================== ====================== ====================== ======================

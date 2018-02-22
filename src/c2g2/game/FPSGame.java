@@ -2,20 +2,41 @@ package c2g2.game;
 
 import c2g2.engine.*;
 import c2g2.engine.graph.*;
+import c2g2.engine.sound.SoundBuffer;
+import c2g2.engine.sound.SoundSource;
 import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.system.CallbackI;
+
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static org.lwjgl.openal.ALC10.alcOpenDevice;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL13.GL_TEXTURE0;
 import static org.lwjgl.opengl.GL13.glActiveTexture;
 import static org.lwjgl.opengl.GL15.*;
 import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL30.*;
+
+
+import java.nio.ByteBuffer;
+import java.nio.IntBuffer;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import org.joml.Matrix4f;
+import org.joml.Vector3f;
+import org.lwjgl.openal.AL;
+import static org.lwjgl.openal.AL10.*;
+import org.lwjgl.openal.ALC;
+import static org.lwjgl.openal.ALC10.*;
+import org.lwjgl.openal.ALCCapabilities;
+import static org.lwjgl.system.MemoryUtil.NULL;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -48,6 +69,15 @@ public class FPSGame implements IGameLogic {
     private boolean left_pressed = false;
 
     private SceneManager sceneManager;
+
+    private SoundSource gunShot;
+
+    private SoundBuffer gunShotBuf;
+
+
+    private long soundDevice;
+
+    private long soundContext;
 
     public FPSGame(){
 
@@ -97,6 +127,24 @@ public class FPSGame implements IGameLogic {
         };
     }
 
+    private void setSound() throws Exception{
+
+        this.soundDevice = alcOpenDevice((ByteBuffer) null);
+        if (soundDevice == NULL) {
+            throw new IllegalStateException("Failed to open the default OpenAL device.");
+        }
+        ALCCapabilities deviceCaps = ALC.createCapabilities(soundDevice);
+        this.soundContext = alcCreateContext(soundDevice, (IntBuffer) null);
+        if (soundContext == NULL) {
+            throw new IllegalStateException("Failed to create OpenAL context.");
+        }
+        alcMakeContextCurrent(soundContext);
+        AL.createCapabilities(deviceCaps);
+        gunShotBuf = new SoundBuffer("src/resources/sounds/gunshot.ogg");
+        gunShot = new SoundSource(false, false);
+        gunShot.setBuffer(gunShotBuf.getBufferId());
+    }
+
     @Override
     public void init(Window window) throws Exception {
         renderer.init(window);
@@ -127,7 +175,7 @@ public class FPSGame implements IGameLogic {
         Vector3f lightPosition = new Vector3f(0, 0, -1);
         pointLight = new PointLight(lightColour, lightPosition, 0.0f);
 
-
+        setSound();
         sceneManager.init();
         gameItems = sceneManager.getGameItems();
 
@@ -165,6 +213,7 @@ public class FPSGame implements IGameLogic {
 
         if (left_pressed){
             if (cur_time - last_fire_time > fire_interval){
+                gunShot.play();
                 last_fire_time = cur_time;
                 Vector3f rotate = new Vector3f(camera.getRotation());
                 Vector3f target = camera.getTarget();
@@ -200,6 +249,17 @@ public class FPSGame implements IGameLogic {
         renderer.cleanup();
         for (GameItem gameItem : gameItems) {
             gameItem.getMesh().cleanUp();
+        }
+
+        gunShot.cleanup();
+
+        gunShotBuf.cleanup();
+
+        if (soundContext != NULL) {
+            alcDestroyContext(soundContext);
+        }
+        if (soundDevice != NULL) {
+            alcCloseDevice(soundDevice);
         }
 
     }

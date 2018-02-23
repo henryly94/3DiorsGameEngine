@@ -2,7 +2,7 @@ package c2g2.game;
 
 import c2g2.engine.GameItem;
 import c2g2.engine.IGameLogic;
-import c2g2.engine.MouseInput;
+import c2g2.engine.UserInput;
 import c2g2.engine.Window;
 import c2g2.engine.graph.*;
 import org.joml.Vector2f;
@@ -28,6 +28,8 @@ public class DummyGame implements IGameLogic {
 
     private GameItem[] gameItems;
 
+    private UserInput userInput;
+
     private Vector3f ambientLight;
 
     private PointLight pointLight;
@@ -50,8 +52,10 @@ public class DummyGame implements IGameLogic {
     }
 
     @Override
-    public void init(Window window) throws Exception {
+    public void init(Window window, UserInput userInput) throws Exception {
         renderer.init(window);
+        this.userInput = userInput;
+
         float reflectance = 1f;
 
         // Different Usage Here
@@ -93,7 +97,7 @@ public class DummyGame implements IGameLogic {
     }
 
     @Override
-    public void input(Window window, MouseInput mouseInput) {
+    public void input(Window window, UserInput mouseInput) {
 
         if(window.isKeyPressed(GLFW_KEY_Q)){
             //select current object
@@ -200,13 +204,13 @@ public class DummyGame implements IGameLogic {
     }
 
     @Override
-    public void update(float interval, MouseInput mouseInput) {
+    public void update(float interval) {
         // Update camera position
         camera.movePosition(cameraInc.x * CAMERA_POS_STEP, cameraInc.y * CAMERA_POS_STEP, cameraInc.z * CAMERA_POS_STEP);
 
         // Update camera based on mouse            
-        if (mouseInput.isLeftButtonPressed()) {
-            Vector2f rotVec = mouseInput.getDisplVec();
+        if (userInput.isLeftButtonPressed()) {
+            Vector2f rotVec = userInput.getDisplVec();
             System.out.println(rotVec);
             Vector3f curr = gameItems[currentObj].getRotation();
             curr = camera.getRotation();

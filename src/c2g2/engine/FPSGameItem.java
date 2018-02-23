@@ -5,6 +5,7 @@ import org.joml.Matrix3f;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
 
+import java.util.Random;
 import java.util.Vector;
 
 public class FPSGameItem extends GameItem {
@@ -18,25 +19,23 @@ public class FPSGameItem extends GameItem {
 
     private String name;
 
+    private Random random;
     private float turnVelocity;
 
     private float moveVelocity;
 
-    private enum TURN{
-        CLOCKWISE,
-        COUNTERCLOCKWISE,
-        NONE
-    }
+    private float thresold;
 
     private enum MOVE{
         FORWARD,
         LEFT,
         RIGHT,
         BACK,
+        CLOCKWISE,
+        COUNTERCLOCKWISE,
         NONE
     }
 
-    private TURN turnStatus;
 
     private Vector3f direction;
 
@@ -49,11 +48,12 @@ public class FPSGameItem extends GameItem {
         this.name = name;
         hp = 100;
         bg = false;
-        turnStatus = TURN.NONE;
         moveStatus = MOVE.NONE;
         turnVelocity = 5;
         moveVelocity = 0.1f;
         direction = new Vector3f(0, 0, 1);
+        random = new Random(System.nanoTime() % 10000);
+        thresold = 0.1f;
     }
 
     public void setBg(boolean bg){
@@ -83,9 +83,13 @@ public class FPSGameItem extends GameItem {
         height = max.y - min.y;
         radiant = ((max.x - min.x) + (max.z - min.z)) / 4;
 
-        height *= getScale();
-        radiant *= getScale();
+    }
 
+    @Override
+    public void setScale(float scale) {
+        super.setScale(scale);
+        height *= scale;
+        radiant *= scale;
     }
 
     public boolean FPSGameItemIntersect(){
@@ -142,34 +146,38 @@ public class FPSGameItem extends GameItem {
     }
 
     public void updateStatus(){
-        double turnChangeDice = Math.random();
-        if (turnChangeDice < 0.1){
-            double turnDirectionDice = Math.random();
-            if (turnDirectionDice < 0.4){
-                turnStatus = TURN.CLOCKWISE;
-            } else if (turnDirectionDice >= 0.4 && turnDirectionDice < 0.8){
-                turnStatus = TURN.COUNTERCLOCKWISE;
+        double turnChangeDice = random.nextFloat();
+        if (turnChangeDice < thresold) {
+            turnChangeDice = random.nextFloat();
+            if (turnChangeDice < 0.1) {
+                thresold = 0.3f;
+                double turnDirectionDice = random.nextFloat();
+                if (turnDirectionDice < 0.4) {
+                    moveStatus = MOVE.CLOCKWISE;
+                } else {
+                    moveStatus = MOVE.COUNTERCLOCKWISE;
+                }
+            } else if (turnChangeDice >= 0.3 && turnChangeDice < 0.9) {
+                thresold = 0.05f;
+                moveStatus = MOVE.FORWARD;
+                double moveChangeDice = random.nextFloat();
+                if (moveChangeDice < 0.05) {
+                    double moveDirectionDice = Math.random();
+                    if (moveDirectionDice < 0.5) {
+                        moveStatus = MOVE.FORWARD;
+                    } else if (moveDirectionDice >= 0.5 && moveDirectionDice < 0.6) {
+                        moveStatus = MOVE.BACK;
+                    } else if (moveDirectionDice >= 0.6 && moveDirectionDice < 0.7) {
+                        moveStatus = MOVE.LEFT;
+                    } else {
+                        moveStatus = MOVE.RIGHT;
+                    }
+                }
             } else {
-                turnStatus = TURN.NONE;
+                moveStatus = MOVE.NONE;
+                thresold = 0.01f;
             }
         }
-//            turnStatus = TURN.NONE;
-            moveStatus = MOVE.FORWARD;
-//        double moveChangeDice = Math.random();
-//        if (moveChangeDice < 0.05){
-//            double moveDirectionDice = Math.random();
-//            if (moveDirectionDice < 0.5){
-//                moveStatus = MOVE.FORWARD;
-//            } else if (moveDirectionDice >= 0.5 && moveDirectionDice < 0.6){
-//                moveStatus = MOVE.BACK;
-//            } else if (moveDirectionDice >= 0.6 && moveDirectionDice < 0.7){
-//                moveStatus = MOVE.LEFT;
-//            } else if (moveDirectionDice >= 0.7 && moveDirectionDice < 0.8){
-//                moveStatus = MOVE.RIGHT;
-//            } else {
-//                moveStatus = MOVE.NONE;
-//            }
-//        }
     }
 
     public int getHp(){
@@ -182,16 +190,6 @@ public class FPSGameItem extends GameItem {
 
     public void update(){
         updateStatus();
-        switch (turnStatus){
-            case CLOCKWISE:
-                turn(-turnVelocity);
-                break;
-            case COUNTERCLOCKWISE:
-                turn(turnVelocity);
-                break;
-            case NONE:
-                break;
-        }
         Vector3f pos = new Vector3f(getPosition());
         Vector3f forward = new Vector3f(direction);
         Vector3f side = new Vector3f();
@@ -199,7 +197,14 @@ public class FPSGameItem extends GameItem {
         side.z = forward.x;
         forward.mul(moveVelocity);
         side.mul(moveVelocity);
+
         switch (moveStatus){
+            case CLOCKWISE:
+                turn(-turnVelocity);
+                break;
+            case COUNTERCLOCKWISE:
+                turn(turnVelocity);
+                break;
             case FORWARD:
                 pos.add(forward);
                 setPosition(pos.x, pos.y, pos.z);

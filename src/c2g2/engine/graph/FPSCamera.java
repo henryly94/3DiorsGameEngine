@@ -15,12 +15,6 @@ public class FPSCamera extends Camera {
 
     private float pitch;
 
-    private boolean isMeshed;
-
-    private Mesh mesh;
-
-//    private FPSGameItem fpsGameItem;
-
     public enum DIRECTION {
         FORWARD,
         BACKWARD,
@@ -30,22 +24,7 @@ public class FPSCamera extends Camera {
 
     public FPSCamera(){
         super();
-        isMeshed = false;
     }
-
-    public void setMesh(Mesh mesh){
-        if (isMeshed) return;
-        isMeshed = true;
-
-    }
-
-//    public void bindItem(FPSGameItem item){
-//        this.fpsGameItem = item;
-//    }
-//
-//    public FPSGameItem getFpsGameItem() {
-//        return fpsGameItem;
-//    }
 
     public void move(DIRECTION direction, float offset){
         float sinYaw = (float)Math.sin(Math.toRadians(yaw));
@@ -91,7 +70,7 @@ public class FPSCamera extends Camera {
     }
 
     public void recoil(){
-        double rec_ver = 4;
+        double rec_ver = 3.5;
         double rec_hor = 3;
         double ver = Math.random();
         double hor = Math.random();
@@ -101,7 +80,6 @@ public class FPSCamera extends Camera {
 
 
     public void rotateTarget(float yaw_X,  float pitch_Y, float step){
-
 
         yaw = (yaw + yaw_X *step + 360) % 360;
 
@@ -121,21 +99,5 @@ public class FPSCamera extends Camera {
         target.y = sinPitch;
         target.z = -cosYaw * cosPitch;
         target.normalize();
-
-//        rotate.rotateAffineXYZ(- (float) Math.toRadians(yaw_X * step),
-//                - (float) Math.toRadians(delta_Y * step), 0);
-//        rotate.transformDirection(target);
-//        System.out.println(yaw + "|" + pitch);
-
-//        Vector3f position = new Vector3f(fpsGameItem.getPosition());
-//        Matrix4f rotate = new Matrix4f();
-//        rotate.identity();
-//        rotate.translate(-position.x, -position.y, -position.z);
-//        rotate.rotateAffineXYZ(0 , (float)Math.toRadians(yaw_X * step),  (float)Math.toRadians(pitch_Y * step));
-//        rotate.translate(position.x, position.y, position.z);
-//        rotate.transformDirection(rotation);
-//        fpsGameItem.setRotation(rotation.x, rotation.y, rotation.z);
-//        fpsGameItem.getMesh().rotateMesh(new Vector3f(0, 1, 0), (float)Math.toRadians(yaw_X * step));
-//        fpsGameItem.getMesh().rotateMesh(new Vector3f(1, 0, 0), -(float)Math.toRadians(pitch_Y * step));
     }
 }

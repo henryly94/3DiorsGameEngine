@@ -17,12 +17,21 @@ public class SceneManager {
 
     private ArrayList<FPSGameItem> gameItems;
 
+    private Mesh enemy;
+
+    private int score;
+
     public SceneManager(){
         gameItemMap = new HashMap<>();
-
     }
 
-    public void init(){
+    public void init() throws Exception{
+
+        enemy = OBJLoader.loadMesh("src/resources/models/horse.obj", "src/resources/textures/horse.png", true);
+        Material material = new Material(new Vector3f(1f, 1f, 1f), 1f);
+        enemy.setMaterial(material);
+        score = 0;
+
     }
 
     public void getShot(Vector3f rayPos, Vector3f rayDir){
@@ -34,6 +43,7 @@ public class SceneManager {
                     item.rayBack(rayDir, 0.5f);
                     System.out.println(item.getName() + item.getHp());
                     if (item.getHp() <= 0){
+                        score += 1;
                         gameItems.remove(item);
                         i--;
                     }
@@ -44,14 +54,22 @@ public class SceneManager {
 
     }
 
+    public int getScore() {
+        System.out.println("Score:" + score);
+        return score;
+    }
 
     public void update(){
-        for (FPSGameItem item : gameItems){
-            if (!item.isBg()){
+        if(Math.random() < 0.01){
+            FPSGameItem newItem = new FPSGameItem(enemy, "Enemy");
+            newItem.setPosition(((float)Math.random() - 0.5f) * 20, 0,  ((float)Math.random() - 0.5f) * 20);
+            gameItems.add(newItem);
+        }
+        for (FPSGameItem item : gameItems) {
+            if (!item.isBg()) {
                 item.update();
             }
         }
-
     }
 
     public void setGameItems(ArrayList<FPSGameItem> gameItems){

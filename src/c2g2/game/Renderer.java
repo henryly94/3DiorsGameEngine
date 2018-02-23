@@ -108,6 +108,7 @@ public class Renderer {
         // Update Light Uniforms
         shaderProgram.setUniform("ambientLight", ambientLight);
         shaderProgram.setUniform("specularPower", specularPower);
+
         // Get a copy of the point light object and transform its position to view coordinates
         PointLight currPointLight = new PointLight(pointLight);
         Vector3f lightPos = currPointLight.getPosition();
@@ -143,7 +144,7 @@ public class Renderer {
         if (hasHud) {
             hudShaderProgram.bind();
             hudShaderProgram.setUniform("projModelMatrix", projectionMatrix);
-            hudShaderProgram.setUniform("colour", new Vector4f(0.6f, 0.6f, 0.6f, 1));
+            hudShaderProgram.setUniform("colour", new Vector4f(0.2f, 0.2f, 0.2f, 1));
             for (FrontItem hudItem : HudItems){
                 hudItem.render();
             }

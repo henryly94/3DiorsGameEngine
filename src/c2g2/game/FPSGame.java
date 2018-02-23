@@ -2,37 +2,22 @@ package c2g2.game;
 
 import c2g2.engine.*;
 import c2g2.engine.graph.*;
+import c2g2.engine.IKeyPressCallBack;
 import c2g2.engine.sound.SoundBuffer;
 import c2g2.engine.sound.SoundSource;
 import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
-import org.lwjgl.glfw.GLFW;
-import org.lwjgl.system.CallbackI;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
-import java.util.Date;
 
 import static org.lwjgl.openal.ALC10.alcOpenDevice;
-import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.opengl.GL13.GL_TEXTURE0;
-import static org.lwjgl.opengl.GL13.glActiveTexture;
-import static org.lwjgl.opengl.GL15.*;
-import static org.lwjgl.opengl.GL20.*;
-import static org.lwjgl.opengl.GL30.*;
 
 
-import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.joml.Matrix4f;
-import org.joml.Vector3f;
+
 import org.lwjgl.openal.AL;
-import static org.lwjgl.openal.AL10.*;
 import org.lwjgl.openal.ALC;
 import static org.lwjgl.openal.ALC10.*;
 import org.lwjgl.openal.ALCCapabilities;
@@ -48,8 +33,21 @@ public class FPSGame implements IGameLogic {
 
     private static final float rate = 60.0f;
 
+    private long last_fire_time;
+
+    private long last_left_buttom_time;
+
+    private long fire_interval = 60;
+
+    private int fireCount = 0;
+
+    private int curScore = 0;
+
+    private boolean left_pressed = false;
+
     private Renderer renderer;
     private FPSCamera camera;
+    private UserInput userInput;
     private DirectionalLight directionalLight;
 
     private Vector3f ambientLight;
@@ -58,22 +56,15 @@ public class FPSGame implements IGameLogic {
 
     private ArrayList<FPSGameItem> gameItems;
 
-    private double last_frame_time;
 
-    private double last_left_buttom_time;
-
-    private long last_fire_time;
-
-    private long fire_interval = 60;
-
-    private boolean left_pressed = false;
 
     private SceneManager sceneManager;
 
-    private SoundSource gunShot;
+    private SoundSource gunShot, bgSound;
 
-    private SoundBuffer gunShotBuf;
+    private SoundBuffer gunShotBuf, bgSoundBuf;
 
+    private FrontItem score;
 
     private long soundDevice;
 
@@ -86,7 +77,7 @@ public class FPSGame implements IGameLogic {
         camera.setPosition(0f, 1f, 5f);
         sceneManager = new SceneManager(){
             @Override
-            public void init() {
+            public void init() throws Exception{
                 super.init();
                 try {
                     Mesh mesh = OBJLoader.loadMesh("src/resources/models/gun.obj", "src/resources/textures/gun.png", true);
@@ -127,6 +118,30 @@ public class FPSGame implements IGameLogic {
         };
     }
 
+    private void setHud() throws Exception{
+        // Set hud
+        FrontItem aim = new FrontItem("+", "src/resources/textures/alphabet.png", 16, 16);
+
+        aim.getMesh().scaleMesh(0.002f, 0.002f, 1);
+        aim.getMesh().translateMesh(new Vector3f(-0.038f, -0.06f, 0));
+        Mesh mesh = OBJLoader.loadMesh("src/resources/models/gun.obj", "src/resources/textures/gun1.png", true);
+        Material material = new Material(new Vector3f(1f, 1f, 1f), 1f);
+        mesh.scaleMesh(0.02f, 0.02f, 0.02f);
+        mesh.rotateMesh(new Vector3f(1, 0, 0), (float)Math.toRadians(-15));
+        mesh.rotateMesh(new Vector3f(0, 1, 0), (float)Math.toRadians(200));
+        mesh.rotateMesh(new Vector3f(0, 0, 1), (float)Math.toRadians(-10));
+        mesh.translateMesh(new Vector3f(0.275f, -0.35f, 0.6f));
+        mesh.setMaterial(material);
+        FrontItem gun = new FrontItem(mesh);
+
+        score = new FrontItem(curScore + "", "src/resources/textures/alphabet.png", 16, 16);
+        score.getMesh().scaleMesh(0.002f, 0.002f, 1);
+        score.getMesh().translateMesh(new Vector3f( 0.6f, 0.45f, 0));
+        FrontItem[] frontItems = new FrontItem[]{aim, gun, score};
+        renderer.setHud(frontItems);
+
+    }
+
     private void setSound() throws Exception{
 
         this.soundDevice = alcOpenDevice((ByteBuffer) null);
@@ -143,29 +158,57 @@ public class FPSGame implements IGameLogic {
         gunShotBuf = new SoundBuffer("src/resources/sounds/gunshot.ogg");
         gunShot = new SoundSource(false, false);
         gunShot.setBuffer(gunShotBuf.getBufferId());
+        bgSoundBuf = new SoundBuffer("src/resources/sounds/bg1.ogg");
+        bgSound = new SoundSource(true, false);
+        bgSound.setBuffer(bgSoundBuf.getBufferId());
     }
 
     @Override
-    public void init(Window window) throws Exception {
+    public void init(Window window, UserInput userInput) throws Exception {
         renderer.init(window);
 
-        // Set hud
-        FrontItem aim = new FrontItem("+", "src/resources/textures/alphabet.png", 16, 16);
+        setUserInput(userInput);
 
-        Mesh mesh = OBJLoader.loadMesh("src/resources/models/gun.obj", "src/resources/textures/gun.png", true);
-        Material material = new Material(new Vector3f(1f, 1f, 1f), 1f);
-        mesh.scaleMesh(0.02f, 0.02f, 0.02f);
-        mesh.rotateMesh(new Vector3f(1, 0, 0), (float)Math.toRadians(-15));
-        mesh.rotateMesh(new Vector3f(0, 1, 0), (float)Math.toRadians(200));
-        mesh.rotateMesh(new Vector3f(0, 0, 1), (float)Math.toRadians(-10));
-        mesh.translateMesh(new Vector3f(0.275f, -0.35f, 0.6f));
-        mesh.setMaterial(material);
-        FrontItem gun = new FrontItem(mesh);
+        setHud();
 
-        FrontItem[] frontItems = new FrontItem[]{aim, gun};
-        renderer.setHud(frontItems);
+        setLight();
+
+        setSound();
+
+        bgSound.play();
+
+        sceneManager.init();
+        gameItems = sceneManager.getGameItems();
+
+    }
 
 
+    private void setUserInput(UserInput userInput) {
+        this.userInput = userInput;
+        //Register Input Here
+        userInput.bindKeyCallBack(GLFW_KEY_W,
+                ()-> camera.move(FPSCamera.DIRECTION.FORWARD, STEP));
+
+        userInput.bindKeyCallBack(GLFW_KEY_S,
+                ()-> camera.move(FPSCamera.DIRECTION.BACKWARD, STEP));
+
+        userInput.bindKeyCallBack(GLFW_KEY_A,
+                ()-> camera.move(FPSCamera.DIRECTION.LEFT, STEP));
+
+        userInput.bindKeyCallBack(GLFW_KEY_D,
+                ()->camera.move(FPSCamera.DIRECTION.RIGHT, STEP));
+
+        userInput.bindKeyCallBack(GLFW_KEY_M,
+                ()-> {
+                    if (bgSound.isPlaying()) {
+                        bgSound.pause();
+                    } else {
+                        bgSound.play();
+                    }
+                });
+    }
+
+    private void setLight() {
         float lightIntensity = 1.0f;
         Vector3f lightDirection = new Vector3f(0, -1, -0.3f).normalize();
         Vector3f lightColour = new Vector3f(1, 1, 1);
@@ -175,14 +218,10 @@ public class FPSGame implements IGameLogic {
         Vector3f lightPosition = new Vector3f(0, 0, -1);
         pointLight = new PointLight(lightColour, lightPosition, 0.0f);
 
-        setSound();
-        sceneManager.init();
-        gameItems = sceneManager.getGameItems();
-
     }
 
     @Override
-    public void input(Window window, MouseInput mouseInput) {
+    public void input(Window window, UserInput mouseInput) {
         if (window.isKeyPressed(GLFW_KEY_W)) {
             camera.move(FPSCamera.DIRECTION.FORWARD, STEP);
         } else if (window.isKeyPressed(GLFW_KEY_A)) {
@@ -193,22 +232,28 @@ public class FPSGame implements IGameLogic {
 
         } else if (window.isKeyPressed(GLFW_KEY_D)) {
             camera.move(FPSCamera.DIRECTION.RIGHT, STEP);
-
+        } else if (window.isKeyPressed(GLFW_KEY_M)){
+            if (bgSound.isPlaying()){
+                bgSound.pause();
+            } else {
+                bgSound.play();
+            }
         }
     }
 
     @Override
-    public void update(float interval, MouseInput mouseInput) {
-        Vector2f rotVec = mouseInput.getDisplVec();
+    public void update(float interval) {
+        Vector2f rotVec = userInput.getDisplVec();
         long cur_time = System.currentTimeMillis();
         if (rotVec.x != 0 || rotVec.y != 0) {
             camera.rotateTarget(-rotVec.y, -rotVec.x, MOUSE_SENSITIVITY);
         }
-        if (!left_pressed && mouseInput.isLeftButtonPressed()){
+        if (!left_pressed && userInput.isLeftButtonPressed()){
             last_left_buttom_time = cur_time;
             left_pressed = true;
-        } else if(!mouseInput.isLeftButtonPressed()) {
+        } else if(!userInput.isLeftButtonPressed()) {
             left_pressed = false;
+            fireCount = 0;
         }
 
         if (left_pressed){
@@ -223,13 +268,22 @@ public class FPSGame implements IGameLogic {
                 m.rotateAffineXYZ(rotate.x, rotate.y, rotate.z);
                 m.transformDirection(target);
                 sceneManager.getShot(position, target);
-                camera.recoil();
+                fireCount ++;
+                if (fireCount >= 3) {
+                    camera.recoil();
+                }
             }
 
         }
 
 
         sceneManager.update();
+        if (curScore != sceneManager.getScore()) {
+            curScore = sceneManager.getScore();
+            score.changeText("" + curScore);
+            score.getMesh().scaleMesh(0.002f, 0.002f, 1);
+            score.getMesh().translateMesh(new Vector3f( 0.6f, 0.45f, 0));
+        }
     }
 
     @Override

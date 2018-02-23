@@ -158,9 +158,6 @@ public class Mesh {
         // Bind Texture
         if (texture != null) {
             // Activate firs texture bank
-
-            glEnable(GL_BLEND);
-            glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
             glActiveTexture(GL_TEXTURE0);
 
             // Bind the texture

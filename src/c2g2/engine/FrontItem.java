@@ -20,6 +20,8 @@ public class FrontItem extends GameItem {
 
     private String text;
 
+    private Texture texture;
+
     private int numCols;
 
     private int numRows;
@@ -28,11 +30,9 @@ public class FrontItem extends GameItem {
         this.text = text;
         this.numCols = numCols;
         this.numRows = numRows;
-        Texture texture = new Texture(0);
+        texture = new Texture(0);
         texture.setTexture(fontFileName);
         buildMesh(texture, this.numCols, this.numRows);
-        getMesh().scaleMesh(0.002f, 0.002f, 1);
-        getMesh().translateMesh(new Vector3f(-0.038f, -0.035f, 0));
     }
 
     public FrontItem(Mesh mesh){
@@ -64,16 +64,17 @@ public class FrontItem extends GameItem {
             positions.add((float)i*tileWidth); // x
             positions.add(0.0f); //y
             positions.add(ZPOS); //z
-            textCoords.add((float)col / (float)numCols );
-            textCoords.add((float)row / (float)numRows );
             indices.add(i*VERTICES_PER_QUAD);
+            textCoords.add((float)col / (float)numCols );
+            textCoords.add((float)(row + 1) / (float)numRows );
 
             // Left Bottom vertex
             positions.add((float)i*tileWidth); // x
             positions.add(tileHeight); //y
             positions.add(ZPOS); //z
+
             textCoords.add((float)col / (float)numCols );
-            textCoords.add((float)(row + 1) / (float)numRows );
+            textCoords.add((float)row / (float)numRows );
             indices.add(i*VERTICES_PER_QUAD + 1);
 
             // Right Bottom vertex
@@ -81,7 +82,7 @@ public class FrontItem extends GameItem {
             positions.add(tileHeight); //y
             positions.add(ZPOS); //z
             textCoords.add((float)(col + 1)/ (float)numCols );
-            textCoords.add((float)(row + 1) / (float)numRows );
+            textCoords.add((float)row / (float)numRows );
             indices.add(i*VERTICES_PER_QUAD + 2);
 
             // Right Top vertex
@@ -89,7 +90,7 @@ public class FrontItem extends GameItem {
             positions.add(0.0f); //y
             positions.add(ZPOS); //z
             textCoords.add((float)(col + 1)/ (float)numCols );
-            textCoords.add((float)row / (float)numRows );
+            textCoords.add((float)(row + 1) / (float)numRows );
             indices.add(i*VERTICES_PER_QUAD + 3);
 
             // Add indices por left top and bottom right vertices
@@ -108,7 +109,14 @@ public class FrontItem extends GameItem {
         for (int i=0; i<indice.length; i++){
             indice[i] = indices.get(i);
         }
+
+        getMesh().cleanMesh();
         getMesh().setMesh(pos, textCoord, normals, indice, texture);
+    }
+
+    public void changeText(String newText){
+        text = newText;
+        buildMesh(texture, numCols, numRows);
     }
 
     public void render() {

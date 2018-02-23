@@ -22,6 +22,8 @@ public class MouseInput {
 
     private boolean rightButtonPressed = false;
 
+    private final float MOUSE_MIN_MOVE = 4;
+
     public MouseInput() {
         previousPos = new Vector2d(-1, -1);
         currentPos = new Vector2d(0, 0);
@@ -67,11 +69,13 @@ public class MouseInput {
             boolean rotateX = deltax != 0;
             boolean rotateY = deltay != 0;
 
-            if (rotateX) {
-                displVec.y = (float) deltax;
-            }
-            if (rotateY) {
-                displVec.x = (float) deltay;
+            if (deltax * deltax + deltay * deltay > MOUSE_MIN_MOVE){
+                if (rotateX) {
+                    displVec.y = (float) deltax;
+                }
+                if (rotateY) {
+                    displVec.x = (float) deltay;
+                }
             }
             previousPos.x = window.getWidth() / 2;
             previousPos.y = window.getHeight() / 2;

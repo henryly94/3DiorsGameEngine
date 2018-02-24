@@ -7,8 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca570d7-5f6d-40c4-a160-9ef6a2616f44" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/c2g2/engine/UserInput.java" afterPath="$PROJECT_DIR$/src/c2g2/engine/UserInput.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-odbc.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opencl.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-opengles.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-par.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-sse.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/lwjgl-zstd.jar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +28,78 @@
       <file leaf-file-name="DummyGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transformation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Texture.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Renderer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/game/Renderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2732">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/UserInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,35 +110,22 @@
       <file leaf-file-name="FPSGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/game/FPSGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="250" column="34" lean-forward="false" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1685#3669#0" expanded="true" />
-                <element signature="e#3668#3669#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInput.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/UserInput.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state relative-caret-position="15">
+              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding>
-                <element signature="e#1497#1718#0" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
-                <element signature="e#1782#2035#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-                <element signature="e#2099#2439#0" expanded="true" />
-                <element signature="e#2438#2439#0" expanded="true" />
-                <element signature="e#2944#2945#0" expanded="true" />
-                <element signature="e#2975#2976#0" expanded="true" />
-                <element signature="e#4475#4476#0" expanded="true" />
-                <element signature="e#4515#4516#0" expanded="true" />
-                <element signature="e#4560#4561#0" expanded="true" />
-                <element signature="e#4601#4602#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,85 +134,10 @@
       <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPSGameItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="127" column="46" lean-forward="false" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FrontItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FPSCamera.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="81" column="23" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IKeyPressCallBack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IKeyPressCallBack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-              <folding>
-                <element signature="e#2058#2059#0" expanded="true" />
-                <element signature="e#2109#2110#0" expanded="true" />
-                <element signature="e#2446#2447#0" expanded="true" />
-                <element signature="e#2485#2486#0" expanded="true" />
-                <element signature="e#2530#2531#0" expanded="true" />
-                <element signature="e#2572#2573#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="78" column="46" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="46" />
-              <folding>
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#2061#2062#0" expanded="true" />
-                <element signature="e#2103#2104#0" expanded="true" />
-                <element signature="e#2154#2155#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -306,13 +293,7 @@
             <path>
               <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
@@ -360,13 +341,6 @@
               <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3DiorsGameEngine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3DiorsGameEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="textures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -518,12 +492,12 @@
       <updated>1518294122378</updated>
       <workItem from="1518294123815" duration="90575000" />
       <workItem from="1518906100748" duration="751000" />
-      <workItem from="1519067277915" duration="54486000" />
+      <workItem from="1519067277915" duration="55475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145812000" />
+    <option name="totallyTimeSpent" value="146801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -537,7 +511,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -571,25 +545,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/FloatBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="1142" column="16" lean-forward="false" selection-start-line="1142" selection-start-column="16" selection-end-line="1142" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/lwjgl-opengl-sources.jar!/org/lwjgl/opengl/GL20.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="1990" column="30" lean-forward="false" selection-start-line="1990" selection-start-column="30" selection-end-line="1990" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/PointLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,14 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/DirectionalLight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/PNGDecoder.jar!/de/matthiasmann/twl/utils/PNGDecoder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5666">
@@ -685,61 +636,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#801#802#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#867#868#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1645#1646#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="106" column="28" lean-forward="false" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/joml-1.9.2.jar!/org/joml/Vector3f.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="448" column="17" lean-forward="false" selection-start-line="448" selection-start-column="17" selection-end-line="448" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Material.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,22 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="241" column="6" lean-forward="false" selection-start-line="241" selection-start-column="6" selection-end-line="241" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="82" column="30" lean-forward="false" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -802,60 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="1" lean-forward="false" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/sound/SoundBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#996#997#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/sound/SoundSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#807#808#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-            <element signature="e#896#897#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#1000#1001#0" expanded="false" />
-            <element signature="e#1026#1027#0" expanded="false" />
-            <element signature="e#1064#1065#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1174#1175#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1304#1305#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
@@ -867,26 +698,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="581" column="0" lean-forward="false" selection-start-line="581" selection-start-column="0" selection-end-line="581" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/DirectionalLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Mesh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="157" column="23" lean-forward="false" selection-start-line="157" selection-start-column="23" selection-end-line="157" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/OBJLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/PointLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/ShaderProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/sound/SoundBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/sound/SoundSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FrontItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IGameLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IKeyPressCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -899,134 +874,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Renderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="88" column="13" lean-forward="false" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IGameLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="67" lean-forward="false" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/GameEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-          <folding>
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2572#2573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/SceneManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="78" column="46" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="46" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#2061#2062#0" expanded="true" />
-            <element signature="e#2103#2104#0" expanded="true" />
-            <element signature="e#2154#2155#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="96" column="5" lean-forward="false" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/IKeyPressCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/FPSCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="81" column="23" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/game/FPSGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="250" column="34" lean-forward="false" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1685#3669#0" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FPSGameItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="127" column="46" lean-forward="false" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/FrontItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/c2g2/engine/UserInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#1497#1718#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1782#2035#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-            <element signature="e#2099#2439#0" expanded="true" />
-            <element signature="e#2438#2439#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#2975#2976#0" expanded="true" />
-            <element signature="e#4475#4476#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/DummyGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/FPSGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/game/Renderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2732">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Transformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/c2g2/engine/graph/Texture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

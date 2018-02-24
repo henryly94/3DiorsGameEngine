@@ -1,4 +1,4 @@
-.idea*
+.idea/*
 out/*
 .DS_Store
 # Compiled class file

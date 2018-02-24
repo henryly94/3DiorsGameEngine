@@ -13,6 +13,11 @@ import java.util.Map;
 import static org.lwjgl.glfw.GLFW.*;
 
 public class UserInput {
+    /*
+     * Original MouseInput
+     * Modified to completely control the input
+     * Use Callback function to interact with model.
+     */
 
     private final Vector2d previousPos;
 

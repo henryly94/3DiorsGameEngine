@@ -21,6 +21,33 @@ I also included several model/texture files with same file name, you can try the
 
 All the functions are stay the same as origin, **Except** loadMesh() in Mesh.java. I modified it in order to load texture and dealing with .dds file's problem. You can see more detail in comments. 
 
-## Part 2 SceneManager & ScriptLoader
+## Part 2 (Creative Scene)FPS Game
 
-TODO
+### Overview
+
+The game is about to hold a m4a1 with silencer to shoot horse for the points:D Please notice that in order to implement the FPS game and make the code style more clean, I've made many changes in 
+the starter code. I always want to made a 3D game engine by myself, but it will be very time consuming. Instead, I made this Counter-Strike-like FPS game. There's several essential part of my game.
+
+- FPSCamera.java
+	- FPSCamera extends origin Camera and add rotateTarget() and move() function in order to get a first person vision.
+- FPSGameItem.java
+	- FPSGameItem extends GameItem and have its own functions like AABB(Axis-aligned Bounding Box) for shooting detect. Also it has moving function.
+- FrontItem.java
+	- This part is for the HUD. Since we need crosshair, a gun and a scoreboard, it will be another essential part of the game. 
+	- In order to get a 2D effect, I write new shaders for HUD. hud\_vertex.vs and hud\_fragment.fs.
+- UserInput.java
+	- Original MouseInput has rather vague usage and wasn't structured very well. The new UserInput will be the only class that connect I/O input with the game and now I can use callback function to define the game's behaviour.
+
+### Operate
+Just running the Main.class. And enjoy shooting. 
+
+| Key | Function    |
+| --- |:----------- |
+|  W  | Move Forward|
+|  S  | Move Back   |
+|  A  | Move Left   |
+|  D  | Move Right  |
+|Left mouse| Shoot  |
+|  M  | Mute/Unmute Bg music|
+
+

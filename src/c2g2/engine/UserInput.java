@@ -46,6 +46,14 @@ public class UserInput {
 
     private Map<Integer, IKeyPressCallBack> keyPressCallBackMap;
 
+    private long leftMouseInterval;
+
+    private long leftMouseLastTime;
+
+    private long rightMouseLastTime;
+
+    private long rightMouseInterval;
+
     private Map<Integer, Long> keyPressLastTimeMap;
 
     private Map<Integer, Long> keyPressIntervalMap;
@@ -86,8 +94,11 @@ public class UserInput {
         glfwSetMouseButtonCallback(window.getWindowHandle(), new GLFWMouseButtonCallback() {
             @Override
             public void invoke(long window, int button, int action, int mods) {
-                leftButtonPressed = button == GLFW_MOUSE_BUTTON_1 && action == GLFW_PRESS;
-                rightButtonPressed = button == GLFW_MOUSE_BUTTON_2 && action == GLFW_PRESS;
+                if (button == GLFW_MOUSE_BUTTON_1){
+                    leftButtonPressed = action == GLFW_PRESS;
+                } else if (button == GLFW_MOUSE_BUTTON_2){
+                    rightButtonPressed = action == GLFW_PRESS;
+                }
             }
         });
 
@@ -106,11 +117,13 @@ public class UserInput {
         keyPressIntervalMap.put(key, interval);
     }
 
-    public void bindMousePressCallBack(IKeyPressCallBack callBack, boolean left){
+    public void bindMousePressCallBack(IKeyPressCallBack callBack, boolean left, long interval){
         if (left) {
             this.mouseLeftPress = callBack;
+            this.leftMouseInterval = interval;
         } else {
             this.mouseRightPress = callBack;
+            this.rightMouseInterval = interval;
         }
 
     }
@@ -122,7 +135,6 @@ public class UserInput {
             this.mouseRightRelease = callBack;
         }
     }
-
 
 
     public Vector2f getDisplVec() {
@@ -139,7 +151,34 @@ public class UserInput {
                 }
             }
         }
+        if (leftButtonPressed) {
+            if (leftMouseLastTime == 0L || curTime > leftMouseLastTime + leftMouseInterval) {
+                leftMouseLastTime = curTime;
+                mouseLeftPress.CallBack();
+            }
+        } else {
+            if (leftMouseLastTime != 0L){
+                if (mouseLeftRelease != null){
+                    mouseLeftRelease.CallBack();
+                }
+            }
+            leftMouseLastTime = 0L;
+        }
 
+        if (!rightButtonPressed) {
+            if (rightMouseLastTime != 0L){
+                if (mouseRightRelease != null){
+                    mouseRightRelease.CallBack();
+                }
+            }
+            rightMouseLastTime = 0L;
+
+        } else {
+            if (rightMouseLastTime == 0L || curTime > rightMouseLastTime + rightMouseInterval) {
+                rightMouseLastTime = curTime;
+                mouseRightPress.CallBack();
+            }
+        }
 
         // Cursor behavior
         displVec.x = 0;
@@ -166,8 +205,6 @@ public class UserInput {
             previousPos.y = window.getHeight() / 2;
             glfwSetCursorPos(window.getWindowHandle(), previousPos.x, previousPos.y);
         }
-
-
 
 
     }

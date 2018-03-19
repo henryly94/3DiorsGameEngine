@@ -55,7 +55,6 @@ public class SceneManager {
     }
 
     public int getScore() {
-//        System.out.println("Score:" + score);
         return score;
     }
 

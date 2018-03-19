@@ -208,22 +208,27 @@ public class FPSGame implements IGameLogic {
                     }
                 });
 
-//        userInput.bindKeyCallBack(GLFW_MOUSE_BUTTON_LEFT,
-//                ()->{
-//                    gunShot.play();
-//                    Vector3f rotate = new Vector3f(camera.getRotation());
-//                    Vector3f target = camera.getTarget();
-//                    Vector3f position = new Vector3f(camera.getPosition());
-//                    Matrix4f m = new Matrix4f();
-//                    m.identity();
-//                    m.rotateAffineXYZ(rotate.x, rotate.y, rotate.z);
-//                    m.transformDirection(target);
-//                    sceneManager.getShot(position, target);
-//                    fireCount ++;
-//                    if (fireCount >= 3) {
-//                        camera.recoil();
-//                    }
-//                }, fire_interval);
+        userInput.bindMousePressCallBack(
+                ()->{
+                    gunShot.play();
+                    Vector3f rotate = new Vector3f(camera.getRotation());
+                    Vector3f target = camera.getTarget();
+                    Vector3f position = new Vector3f(camera.getPosition());
+                    Matrix4f m = new Matrix4f();
+                    m.identity();
+                    m.rotateAffineXYZ(rotate.x, rotate.y, rotate.z);
+                    m.transformDirection(target);
+                    sceneManager.getShot(position, target);
+                    fireCount ++;
+                    if (fireCount >= 3) {
+                        camera.recoil();
+                    }
+                }, true, fire_interval);
+        userInput.bindMouseReleaseCallBack(
+                ()->{
+                    fireCount = 0;
+                }, true
+        );
     }
 
     private void setLight() {
@@ -265,33 +270,6 @@ public class FPSGame implements IGameLogic {
         long cur_time = System.currentTimeMillis();
         if (rotVec.x != 0 || rotVec.y != 0) {
             camera.rotateTarget(-rotVec.y, -rotVec.x, MOUSE_SENSITIVITY);
-        }
-        if (!left_pressed && userInput.isLeftButtonPressed()){
-            last_left_buttom_time = cur_time;
-            left_pressed = true;
-        } else if(!userInput.isLeftButtonPressed()) {
-            left_pressed = false;
-            fireCount = 0;
-        }
-
-        if (left_pressed){
-            if (cur_time - last_fire_time > fire_interval){
-                gunShot.play();
-                last_fire_time = cur_time;
-                Vector3f rotate = new Vector3f(camera.getRotation());
-                Vector3f target = camera.getTarget();
-                Vector3f position = new Vector3f(camera.getPosition());
-                Matrix4f m = new Matrix4f();
-                m.identity();
-                m.rotateAffineXYZ(rotate.x, rotate.y, rotate.z);
-                m.transformDirection(target);
-                sceneManager.getShot(position, target);
-                fireCount ++;
-                if (fireCount >= 3) {
-                    camera.recoil();
-                }
-            }
-
         }
 
 

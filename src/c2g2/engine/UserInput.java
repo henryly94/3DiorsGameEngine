@@ -5,6 +5,7 @@ import org.joml.Vector2f;
 import org.lwjgl.glfw.GLFWCursorEnterCallback;
 import org.lwjgl.glfw.GLFWCursorPosCallback;
 import org.lwjgl.glfw.GLFWMouseButtonCallback;
+import org.lwjgl.system.CallbackI;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,6 +36,14 @@ public class UserInput {
 
     private static final float MOUSE_MIN_MOVE = 4;
 
+    private IKeyPressCallBack mouseLeftPress;
+
+    private IKeyPressCallBack mouseRightPress;
+
+    private IKeyPressCallBack mouseLeftRelease;
+
+    private IKeyPressCallBack mouseRightRelease;
+
     private Map<Integer, IKeyPressCallBack> keyPressCallBackMap;
 
     private Map<Integer, Long> keyPressLastTimeMap;
@@ -47,6 +56,12 @@ public class UserInput {
         keyPressCallBackMap = new HashMap<>();
         keyPressLastTimeMap = new HashMap<>();
         keyPressIntervalMap = new HashMap<>();
+
+        mouseLeftPress = null;
+        mouseLeftRelease = null;
+        mouseRightPress =  null;
+        mouseRightRelease = null;
+
         keyIds = new ArrayList<>();
         previousPos = new Vector2d(-1, -1);
         currentPos = new Vector2d(0, 0);
@@ -89,8 +104,26 @@ public class UserInput {
         }
         keyPressCallBackMap.put(key, callBack);
         keyPressIntervalMap.put(key, interval);
+    }
+
+    public void bindMousePressCallBack(IKeyPressCallBack callBack, boolean left){
+        if (left) {
+            this.mouseLeftPress = callBack;
+        } else {
+            this.mouseRightPress = callBack;
+        }
 
     }
+
+    public void bindMouseReleaseCallBack(IKeyPressCallBack callBack, boolean left) {
+        if (left) {
+            this.mouseLeftRelease = callBack;
+        } else {
+            this.mouseRightRelease = callBack;
+        }
+    }
+
+
 
     public Vector2f getDisplVec() {
         return displVec;
@@ -108,6 +141,7 @@ public class UserInput {
         }
 
 
+        // Cursor behavior
         displVec.x = 0;
         displVec.y = 0;
         if (previousPos.x > 0 && previousPos.y > 0 && inWindow) {
@@ -132,6 +166,10 @@ public class UserInput {
             previousPos.y = window.getHeight() / 2;
             glfwSetCursorPos(window.getWindowHandle(), previousPos.x, previousPos.y);
         }
+
+
+
+
     }
 
     public boolean isLeftButtonPressed() {

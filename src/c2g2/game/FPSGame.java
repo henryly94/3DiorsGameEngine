@@ -16,6 +16,7 @@ import static org.lwjgl.openal.ALC10.alcOpenDevice;
 
 
 import java.nio.IntBuffer;
+import java.util.Arrays;
 
 import org.lwjgl.openal.AL;
 import org.lwjgl.openal.ALC;
@@ -206,6 +207,23 @@ public class FPSGame implements IGameLogic {
                         bgSound.play();
                     }
                 });
+
+//        userInput.bindKeyCallBack(GLFW_MOUSE_BUTTON_LEFT,
+//                ()->{
+//                    gunShot.play();
+//                    Vector3f rotate = new Vector3f(camera.getRotation());
+//                    Vector3f target = camera.getTarget();
+//                    Vector3f position = new Vector3f(camera.getPosition());
+//                    Matrix4f m = new Matrix4f();
+//                    m.identity();
+//                    m.rotateAffineXYZ(rotate.x, rotate.y, rotate.z);
+//                    m.transformDirection(target);
+//                    sceneManager.getShot(position, target);
+//                    fireCount ++;
+//                    if (fireCount >= 3) {
+//                        camera.recoil();
+//                    }
+//                }, fire_interval);
     }
 
     private void setLight() {

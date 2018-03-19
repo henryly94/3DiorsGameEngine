@@ -115,8 +115,10 @@ public class FrontItem extends GameItem {
     }
 
     public void changeText(String newText){
-        text = newText;
-        buildMesh(texture, numCols, numRows);
+        if (text != null && !text.equals(newText)) {
+            text = newText;
+            buildMesh(texture, numCols, numRows);
+        }
     }
 
     public void render() {

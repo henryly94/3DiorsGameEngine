@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="pa1_release:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pa1_release_jar</output-path>
+    <root id="root">
+      <element id="archive" name="pa1_release.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/c2g2/game/resources/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="pa1_release" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="library" level="project" name="lwjgl" />
+        <element id="library" level="project" name="lwjgl-glfw" />
+        <element id="library" level="project" name="PNGDecoder" />
+      </element>
+    </root>
+  </artifact>
+</component>

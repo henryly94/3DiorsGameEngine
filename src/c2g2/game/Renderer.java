@@ -145,6 +145,7 @@ public class Renderer {
             hudShaderProgram.bind();
             hudShaderProgram.setUniform("projModelMatrix", projectionMatrix);
             hudShaderProgram.setUniform("colour", new Vector4f(0.2f, 0.2f, 0.2f, 1));
+            hudShaderProgram.setUniform("texture_sampler", 0);
             for (FrontItem hudItem : HudItems){
                 hudItem.render();
             }
@@ -178,6 +179,7 @@ public class Renderer {
         // Create uniforms for Ortographic-model projection matrix and base colour
         hudShaderProgram.createUniform("projModelMatrix");
         hudShaderProgram.createUniform("colour");
+        hudShaderProgram.createUniform("texture_sampler");
     }
     
 
